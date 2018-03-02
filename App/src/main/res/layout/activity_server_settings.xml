@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yavorikinc.labaccounting.ServerSettings">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/server_ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ip_adress"
+            android:layout_alignLeft="@+id/ip_adress"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/ip_adress"
+            android:layout_alignStart="@+id/ip_adress"
+            android:layout_marginTop="116dp"
+            android:text="ІР-адреса Сервера"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ip_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/server_ip_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:digits="0123456789.:"
+            android:ems="10"
+            android:hint="ІР-адреса сервера"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/save_ip_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ip_adress"
+            android:layout_alignLeft="@+id/ip_adress"
+            android:layout_alignRight="@+id/ip_adress"
+            android:layout_alignStart="@+id/ip_adress"
+            android:layout_below="@+id/ip_adress"
+            android:layout_marginTop="34dp"
+            android:background="@color/colorPrimary"
+            android:text="Зберегти"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@color/colorPrimary" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
